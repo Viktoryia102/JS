@@ -1,0 +1,37 @@
+<html> 
+<head>
+    <meta charset="UTF-8" />
+    <title>Zadanie 5 - Vashkevich</title>
+    <script language="JavaScript">
+        function WinOpen_vashkevich_1() {
+            window.open("jeden_vashkevich.html","grafika1","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=400");
+        }
+        function WinOpen_vashkevich_2() {
+            window.open("dwa_vashkevich.html","grafika2","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=600");
+        }
+        function WinOpen_vashkevich_3() {
+            window.open("trzy_vashkevich.html","grafika3","toolbar=no,directories=no,menubar=no,height=380,width=160,top=600,left=400");
+        }
+        function WinOpen_vashkevich_4() {
+            window.open("cztery_vashkevich.html","grafika4","toolbar=no,directories=no,menubar=no,height=380,width=160,top=600,left=600");
+        }
+        function okno_zamknij_vashkevich() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <script>
+            document.write("Wykonała: Vashkevich Viktoryia, numer w dzienniku 27, czyli mam układ [(27) mod 4 = 3] → Układ 3<br>"
+                .fontcolor("red").bold().fontsize(6));
+        </script>
+        <br>
+        <input type="button" value="Grafika 1" onclick="WinOpen_vashkevich_1()">
+        <input type="button" value="Grafika 2" onclick="WinOpen_vashkevich_2()"><br><br>
+        <input type="button" value="Grafika 3" onclick="WinOpen_vashkevich_3()">
+        <input type="button" value="Grafika 4" onclick="WinOpen_vashkevich_4()"><br><br>
+        <input type="button" value="Zamknij" onclick="okno_zamknij_vashkevich()">
+    </center>
+</body>
+</html>
