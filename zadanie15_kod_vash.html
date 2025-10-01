@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kod zadanie 13</title>
+    <title>Kod zadanie 15</title>
 </head>
 <body>
-    <textarea cols="100" rows="31">
-    <!DOCTYPE html>
+    <textarea cols="100" rows="25">
+        <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadanie 13</title>
+    <title>Zadanie 15</title>
 </head>
 <body>
     <script>
-        let m_vas = prompt("Wpisz liczbę: ");
-        let m_vas_copy = m_vas;
+        var m_vas = parseFloat(prompt("Wpisz liczbę: "));
         
-        let m2_vas = m_vas_copy++;
-        let m3_vas = m_vas_copy*m2_vas;
-        
-        document.write("1/" + m_vas + "= 1/" + m_vas_copy + "+ 1/" + m3_vas + "");
+
+        document.write("1/" + m_vas + "= 1/" + (m_vas*2) + "+ 1/" + (m_vas*2) + " ");
 
         function okno_zamknij(){ 
                 window.close() }
@@ -33,9 +33,6 @@
     </form>
 </body>
 </html>
-
-<!--Vashkevich Viktoryia 25.09.25
-Zadanie 13-->
     </textarea>
 </body>
 </html>
