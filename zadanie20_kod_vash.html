@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadanie 15</title>
+</head>
+<body>
+    <textarea cols="100" rows="25">
+        <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanie 20</title>
+
+    <style>
+        .punkt{
+            width: 15px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        
+        function AB_vas(){
+        let xA_vas=parseFloat(document.getElementById('xA_vas').value);
+        let yA_vas=parseFloat(document.getElementById('yA_vas').value);
+        let xB_vas=parseFloat(document.getElementById('xB_vas').value);
+        let yB_vas=parseFloat(document.getElementById('yB_vas').value);
+
+        let wynik_vas= Math.sqrt(Math.pow((xA_vas-xB_vas),2) + Math.pow((yA_vas-yB_vas),2));
+        document.getElementById('wynikAB_vas').innerHTML="Długość boku AB = " + wynik_vas.toFixed(2) + "";}
+
+        function BC_vas(){
+        let xA_vas=parseFloat(document.getElementById('xB_vas').value);
+        let yA_vas=parseFloat(document.getElementById('yB_vas').value);
+        let xB_vas=parseFloat(document.getElementById('xC_vas').value);
+        let yB_vas=parseFloat(document.getElementById('yC_vas').value);
+
+        let wynik_vas= Math.sqrt(Math.pow(xA_vas-xB_vas,2) + Math.pow(yA_vas-yB_vas,2));
+        document.getElementById('wynikBC_vas').innerHTML="Długość boku BC = " + wynik_vas.toFixed(2) + "";}
+
+        function CA_vas(){
+        let xA_vas=parseFloat(document.getElementById('xC_vas').value);
+        let yA_vas=parseFloat(document.getElementById('yC_vas').value);
+        let xB_vas=parseFloat(document.getElementById('xA_vas').value);
+        let yB_vas=parseFloat(document.getElementById('yA_vas').value);
+
+        let wynik_vas= Math.sqrt(Math.pow(xA_vas-xB_vas,2) + Math.pow(yA_vas-yB_vas,2));
+        document.getElementById('wynikCA_vas').innerHTML="Długość boku CA = " + wynik_vas.toFixed(2) + "";}
+        
+    </script>
+
+    
+    Podaj punkt A: x <input type="text" id="xA_vas" value="" class="punkt"> y <input type="text" id="yA_vas" value="" class="punkt"> <br><br>
+    Podaj punkt B: x <input type="text" id="xB_vas" value="" class="punkt"> y <input type="text" id="yB_vas" value="" class="punkt"> <br><br>
+    Podaj punkt C: x <input type="text" id="xC_vas" value="" class="punkt"> y <input type="text" id="yC_vas" value="" class="punkt"> <br><br>
+    
+    <input type="button" id="oblicz_vas" value="Oblicz długości" onclick="AB_vas() &BC_vas() &CA_vas()">
+    
+
+    <div id="wynikAB_vas" style="color:red;font-size:50px;"></div>
+    <div id="wynikBC_vas" style="color:red;font-size:50px;"></div>
+    <div id="wynikCA_vas" style="color:red;font-size:50px;"></div>
+</body>
+</html>
+    </textarea>
+</body>
+</html>

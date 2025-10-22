@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanie 19</title>
+</head>
+<body>
+    <script>
+        function pole_vas(){
+        let bok_vas=parseFloat(document.getElementById('dlugosc').value);
+        let wynik_vas=bok_vas**2;
+        document.getElementById('nazwa').innerHTML="Pole kwadratu = " + wynik_vas.toFixed(2) + " cm^2";}
+
+        function obwod_vas(){
+        let bok_vas=parseFloat(document.getElementById('dlugosc').value);
+        let wynik_vas=bok_vas*4;
+        document.getElementById('nazwa').innerHTML="Obwód kwadratu = " + wynik_vas.toFixed(2) + " cm";}
+    </script>
+
+
+    <h1>Wszystko o KWADRACIE</h1><br>
+    Podaj dlugość boku: <input type="text" id="dlugosc" value=""> cm <br><br><br>
+
+    <input type="button" id="pole" value="Oblicz pole" onclick="pole_vas()"><p>
+    <input type="button" id="obwód" value="Oblicz obwod" onclick="obwod_vas()">
+    <div id="nazwa" style="color:red;font-size:50px;"></div>
+</body>
+</html>

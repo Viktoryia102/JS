@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadanie 23</title>
+</head>
+<body>
+    <textarea cols="100" rows="25">
+        <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanie 23</title>
+
+    <style>
+        input[type="text"]{
+            width: 35px;
+        }
+        input[type="text"]:last-of-type{
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+    function dlugosc_vas(d_vas, x_vas){
+        let dlugosc_vas = Math.sqrt(Math.pow(d_vas, 2) + Math.pow(x_vas, 2));
+        document.getElementById('dlugosc').value = dlugosc_vas.toFixed(2);
+    }
+
+    function alfa_vas(d_vas, x_vas){
+        let alfaRadiany_vas = Math.atan(d_vas / x_vas);
+        let alfaStopni_vas = (alfaRadiany_vas * 180) / Math.PI;
+        document.getElementById('alfa').value = alfaStopni_vas.toFixed(2);
+    }
+
+    function oblicz(){
+        let d_vas = parseFloat(document.getElementById('d_vas').value);
+        let x_vas = parseFloat(document.getElementById('x_vas').value);
+        dlugosc_vas(d_vas, x_vas);
+        alfa_vas(d_vas, x_vas);
+    }
+</script>
+
+    <h1>Obliczenie kąta nachylenia i długości drabiny</h1>
+
+    Podaj D-wysokość oparcia drabiny: 
+    <input size ="9" type="text" id="d_vas"> 
+    <br><br>
+    Podaj X-odległość oparcia drabiny: 
+    <input size ="9" type="text" id="x_vas"> 
+    <br><br>
+
+    <input type="button" value="Oblicz" onclick="oblicz()"> <br><br>
+
+    Długość drabiny 
+    <input type="text" id="dlugosc">
+    Kąt nachylenia drabiny 
+    <input type="text" id="alfa">
+</body>
+</html>
+    </textarea>
+</body>
+</html>

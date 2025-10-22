@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadanie 24</title>
+</head>
+<body>
+    <textarea cols="100" rows="25">
+        <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanie 24</title>
+</head>
+<body>
+    <script>
+        let x1_vas=parseFloat(prompt('Podaj liczbę x1'))
+        let x2_vas=parseFloat(prompt('Podaj liczbę x2'))
+
+        const liczbaLiterImienia_vas=6;
+        const l_vas=parseFloat(liczbaLiterImienia_vas);
+
+        let x1Stopni_vas=x1_vas;
+        let x1Radiany_vas=(x1Stopni_vas*Math.PI)/180;
+
+        let y1_vas=3*Math.pow(x1_vas,(l_vas/(l_vas+2)))
+        let y2_vas=2*Math.cos(x1Radiany_vas) + 3*Math.sin(x1Radiany_vas);
+        let y3_vas=Math.cbrt(Math.pow(x1_vas,5)+2*Math.pow(x2_vas,4),3)*Math.abs(x1_vas-x2_vas);
+
+        document.write("x1 = " + x1_vas + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x2 = " + x2_vas + "<br>")
+        document.write("x1 = " + x1Stopni_vas + "[stopni]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x1 = " + x1Radiany_vas.toFixed(2) + "[radiany] <br><br>")
+        document.write("y1 = " + y1_vas.toFixed(2) + "<br>")
+        document.write("y2 = " + y2_vas.toFixed(2) + "<br>")
+        document.write("y3 = " + y3_vas.toFixed(2) + "<br>")
+    </script>
+</body>
+</html>
+    </textarea>
+</body>
+</html>
