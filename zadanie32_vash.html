@@ -1,0 +1,37 @@
+<html>
+<head>
+<script type="text/javascript">
+function Telefon(siec_v, marka_v, model_v, cena_v) {
+    this.siec = siec_v;
+    this.marka = marka_v;
+    this.model = model_v;
+    this.cena = cena_v;
+}
+
+Telefon.prototype.Telefon_wyswietl_vashkevich = function() {
+    document.write(this.marka + ' ' + this.model + ' - sieć: ' + this.siec + '<br>');
+};
+
+var telefon1 = new Telefon("5G", "Samsung", "Galaxy S23", 2599);
+var telefon2 = new Telefon("4G", "Apple", "iPhone 14", 3499);
+var telefon3 = new Telefon("5G", "Xiaomi", "Redmi Note 12", 1299);
+
+Telefon.prototype.kolor = "czarny";
+
+Telefon.prototype.Telefon_pokaz_vashkevich = function() {
+    alert('Cena: ' + this.cena + ' zł\nKolor: ' + this.kolor);
+};
+
+telefon1.Telefon_wyswietl_vashkevich();
+telefon2.Telefon_wyswietl_vashkevich();
+telefon3.Telefon_wyswietl_vashkevich();
+
+document.write("dostęp do właściwości" + "<br>");
+document.write("telefon pierwszy" + " " + telefon1.marka + " " + telefon1.model + " " + telefon1.siec + " " + telefon1.cena);
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe
+</body>
+</html>
