@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanie 39</title>
+</head>
+<style>
+    #menu{
+        color: green;
+    }
+    #red{
+        color: red;
+    }
+    #blue{
+        color: blue;
+    }
+</style>
+<body>
+    <h1 id="menu">MENU</h1>
+    <br><br>
+    <h1 id="red">1-CZERWONY</h1>
+    <h1 id="blue">2-NIEBIESKI</h1>
+</body>
+</html>
+<input type="button" name="vashkevich" value="Oblicz" onclick="fun_vas()"/> 
+  <script> 
+    function fun_vas() { 
+      var x_vas = prompt("Podaj kolor", ""); 
+        if(x_vas == 1 || x_vas.toLowerCase() == "czerwony") { 
+  document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br/>'); } 
+        else if(x_vas == 2 || x_vas.toLowerCase() == "niebieski") { 
+  document.write('<h6 style="color:blue;">wczytałeś kolor niebieski</h6><br />'); 
+  } 
+  } 
+ </script>

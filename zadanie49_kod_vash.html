@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadanie 49</title>
+</head>
+<body>
+    <textarea cols="100" rows="25">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 49</title>
+</head>
+<body>
+    <script>
+
+        let n_vas=parseFloat(prompt("Podaj liczbę n"));
+        let silnia_vas=1; 
+
+        if(n_vas<0){
+            document.write("Silnia z ujemnej liczby nie istnieje");
+        }
+        if(n_vas==0){
+            document.write("Silnia ");
+        }
+        else{
+            document.write("n=" +n_vas+"<br>");
+
+            for(i=1;i<=n_vas;i++){
+                silnia_vas=silnia_vas*i; 
+            }
+            document.write(n_vas+"!="+silnia_vas);
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadanie 43</title>
+</head>
+<body>
+    <textarea cols="100" rows="25">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 47</title>
+</head>
+<body>
+    <script>
+
+        function oblicz_vas(){
+        let a_vas=parseFloat(document.getElementById('a').value);
+        let b_vas=parseFloat(document.getElementById('b').value); 
+        let c_vas=parseFloat(document.getElementById('c').value);
+
+        if(a_vas<=0 || b_vas<=0 || c_vas<=0 || isNaN(a_vas) || isNaN(b_vas) || isNaN(c_vas))
+                {
+                    document.getElementById('wynik').innerHTML="Spróbuj ponownie";
+                    return;
+                }
+        if(a_vas+b_vas>c_vas && a_vas+c_vas>b_vas && c_vas+b_vas>a_vas){
+                    document.getElementById('wynik').innerHTML="Boki "+a_vas+" "+b_vas+" "+c_vas+" ";}
+        else{
+            document.getElementById('wynik').innerHTML="Z tych boków nie tworzy się trojkąt";}
+        }
+    </script>
+
+    Podaj bok a <input type="number" name="" id="a"><br><br>
+    Podaj bok b <input type="number" name="" id="b"><br><br>
+    Podaj bok c <input type="number" name="" id="c"><br><br>
+
+    <br><br>
+    <input type="button" id="oblicz" value="oblicz" onclick="oblicz_vas()">
+
+    <p id="wynik"></p>
+</body>
+</html>
+</body>
+</html>
